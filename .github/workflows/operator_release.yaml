@@ -259,12 +259,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Download operator_info
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4.1.7
         with:
           name: operator_info
           path: /tmp/operator-test/
       - name: Download converted operators
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4.1.7
         with:
           name: operators_converted
           path: /tmp/operator-test/operators
@@ -302,12 +302,12 @@ jobs:
       fail-fast: false
     steps:
       - name: Download operator_info
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4.1.7
         with:
           name: operator_info
           path: /tmp/operator-test/
       - name: Download converted operators
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4.1.7
         with:
           name: operators_converted
           path: /tmp/operator-test/operators
